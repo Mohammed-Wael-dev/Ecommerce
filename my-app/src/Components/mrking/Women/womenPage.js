@@ -35,13 +35,12 @@ export default function WomenPage() {
         );
         if (!response.ok) throw new Error("Network response was not ok");
         const json = await response.json();
-
         const womenData = json.female.map((item) => ({
           ...item,
           price: {
             ...item.price,
-            new: parseFloat(item.price.new.replace("$", "")),
-            old: parseFloat(item.price.old.replace("$", "")),
+              new: item.price.new.toString(),
+              old: item.price.old.toString(),
           },
         }));
 
@@ -67,7 +66,6 @@ export default function WomenPage() {
       }else{
           document.querySelector('body').style.overflow = 'hidden';
       }
-      // console.log(e.target.value)
       if(e.target.textContent != ''){
           setHighQuickVal(women.filter(item => item.name == e.target.textContent )|| "");
           
@@ -110,12 +108,10 @@ export default function WomenPage() {
       window.dispatchEvent(new Event('storage'));
       setShoesNum(1);
   }
-
   const handleFilterChange = (event, values) => {
     setMinPrice(values[0]);
     setMaxPrice(values[1]);
   };
-
   const handleMinPriceChange = (newValue) => {
     setMinPrice(newValue);
     if (newValue > maxPrice) setMaxPrice(newValue);

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGoogle, faFacebookF, faLinkedinIn, faXTwitter } from "@fortawesome/free-brands-svg-icons"
-// import siteLogo from '../../Imgs/m-wael/site-logo.png'
+// import siteLogo from '../../Imgs/zeroz/site-logo.png'
 import AccountStyle from './AccountStyle.css'
 
 export default function Account() {
@@ -20,7 +20,6 @@ export default function Account() {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-    console.log(active);
     return (
         <>
             <div className="mainAccountContainer flex h-[100vh] w-[100vw] shadow-xl bg-[white] justify-center items-center">
@@ -47,8 +46,8 @@ export default function Account() {
                         </div>
                     </div>
                     <p className="text-center mt-[5%] mb-[3%] font-semibold">Login with Email & Password</p>
-                        <input  className="w-[100%] bg-[#eee] mb-[5%] p-[2%] ps-[3%] rounded" type="email" placeholder="Email" />
-                        <input  className="w-[100%] bg-[#eee] mb-[5%] p-[2%] ps-[3%] rounded" type="password" placeholder="Password" />
+                        <input  className="accoutInput w-[100%] bg-[#eee] mb-[5%] p-[2%] ps-[3%] rounded" type="email" placeholder="Email" />
+                        <input  className="accoutInput w-[100%] bg-[#eee] mb-[5%] p-[2%] ps-[3%] rounded" type="password" placeholder="Password" />
                         <a href="/" className="flex justify-center">
                             <button className="py-[2%] px-[10%] bg-[#6e7051] tracking-widest font-semibold text-[1rem] mt-[2%] text-white p-3 duration-[0.8s] hover:bg-[#262b2c] rounded">Login</button>
                         </a>
@@ -71,9 +70,9 @@ export default function Account() {
                         </div>
                     </div>
                     <p className="text-center mt-[5%] mb-[3%] font-semibold">Register with E.mail</p>
-                        <input required className="w-[100%] bg-[#eee] mb-[5%] p-[2%] ps-[3%] rounded" type="text" placeholder="Name" />
-                        <input required className="w-[100%] bg-[#eee] mb-[5%] p-[2%] ps-[3%] rounded" type="email" placeholder="Email" />
-                        <input required className="w-[100%] bg-[#eee] mb-[5%] p-[2%] ps-[3%] rounded" type="password" placeholder="Password" />
+                        <input required className="accoutInput w-[100%] bg-[#eee] mb-[5%] p-[2%] ps-[3%] rounded" type="text" placeholder="Name" />
+                        <input required className="accoutInput w-[100%] bg-[#eee] mb-[5%] p-[2%] ps-[3%] rounded" type="email" placeholder="Email" />
+                        <input required className="accoutInput w-[100%] bg-[#eee] mb-[5%] p-[2%] ps-[3%] rounded" type="password" placeholder="Password" />
                         <a href="/" className="flex justify-center">
                             <button className="py-[2%] px-[10%] bg-[#6e7051] tracking-widest font-semibold text-[1rem] mt-[2%] text-white p-3 duration-[0.8s] hover:bg-[#262b2c] rounded">SIGN UP</button>
                         </a>

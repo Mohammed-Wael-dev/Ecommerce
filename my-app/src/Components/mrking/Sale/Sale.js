@@ -44,7 +44,6 @@ export default function Sale() {
         }else{
             document.querySelector('body').style.overflow = 'hidden';
         }
-        // console.log(e.target.value)
         if(e.target.textContent != ''){
             setHighQuickVal(saleShoes.filter(item => item.name == e.target.textContent )|| "");
             

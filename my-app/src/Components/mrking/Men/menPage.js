@@ -31,18 +31,18 @@ export default function MenPage() {
    async function test(){
       try{
           const response = await fetch(`${window.location.toString().slice(0,-3)}database/database.json`);
-          console.log(`${window.location.toString().slice(0,-3)}`);
           
           if (!response.ok) {
               throw new Error('Network response was not ok');
           }
           const json = await response.json();
+
           const menData = json.male.map((item) => ({
             ...item,
             price: {
               ...item.price,
-              new: parseFloat(item.price.new.replace("$", "")),
-              old: parseFloat(item.price.old.replace("$", "")),
+              new: item.price.new.toString(),
+              old: item.price.old.toString(),
             },
           }));
           
@@ -71,11 +71,9 @@ export default function MenPage() {
       }else{
           document.querySelector('body').style.overflow = 'hidden';
       }
-      // console.log(e.target.value)
       if(e.target.textContent != ''){
           setHighQuickVal(male.filter(item => item.name == e.target.textContent )|| "");
       }else{
-        console.log(`${window.location.toString().slice(0,-3)}${male[0].img.substr(1)}`);
           setHighQuickVal(male.filter(item => (`${window.location.toString().slice(0,-3)}${item.img.substr(1)}`).toString() == e.target.src) || "");
         }
         setShoesNum(1);
@@ -107,18 +105,12 @@ export default function MenPage() {
           setHighQuickView(!highQuickView);
       }
       document.querySelector('body').style.overflow = 'visible';
-      // Retrieve current items from local storage
       const currentItems = JSON.parse(localStorage.getItem("item")) || [];
-      // Add the new item to the list
       const updatedItems = [...currentItems, itemToAdd];
-      // Save updated list back to local storage
       localStorage.setItem("item", JSON.stringify(updatedItems));
-
-      // Trigger storage event to sync other components
       window.dispatchEvent(new Event('storage'));
       setShoesNum(1);
   }
-
   const handleFilterChange = (event, values) => {
     setMinPrice(values[0]);
     setMaxPrice(values[1]);

@@ -5,19 +5,19 @@ import './index.css';
 import App from './App';
 // import 'flowbite';
 import reportWebVitals from './reportWebVitals';
-import Header from './Components/m-wael/Header/Header';
-import Footer from './Components/m-wael/Footer/Footer';
-import HomeContent from './Components/m-wael/Home/homeContent';
-import LookBook from './Components/m-wael/LookBook/LookBook'
-import Cart from './Components/m-wael/Cart/Cart'
-import Checkout from './Components/m-wael/Checkout/Checkout'
-import Account from './Components/m-wael/Account/Account'
-import OurStory from './Components/m-wael/OurStory/OurStory';
-import Men from "./Components/m-hamza/Men/menPage";
-import Women from "./Components/m-hamza/Women/womenPage";
-import Collection from "./Components/m-hamza/Collection/menNWomen";
-import Sale from "./Components/m-hamza/Sale/Sale";
-import Contact from "./Components/m-hamza/Contact/Conatact";
+import Header from './Components/zeroz/Header/Header';
+import Footer from './Components/zeroz/Footer/Footer';
+import HomeContent from './Components/zeroz/Home/homeContent';
+import LookBook from './Components/zeroz/LookBook/LookBook'
+import Cart from './Components/zeroz/Cart/Cart'
+import Checkout from './Components/zeroz/Checkout/Checkout'
+import Account from './Components/zeroz/Account/Account'
+import OurStory from './Components/zeroz/OurStory/OurStory';
+import Men from "./Components/mrking/Men/menPage";
+import Women from "./Components/mrking/Women/womenPage";
+import Collection from "./Components/mrking/Collection/menNWomen";
+import Sale from "./Components/mrking/Sale/Sale";
+import Contact from "./Components/mrking/Contact/Conatact";
 
 const router = createBrowserRouter([
   { path: '/',

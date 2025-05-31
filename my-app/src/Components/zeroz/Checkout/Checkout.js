@@ -2,7 +2,7 @@ import CheckoutStyle from './CheckoutStyle.css'
 import { useState, useEffect } from 'react';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-import siteLogo from '../../Imgs/m-wael/site-logo.png'
+import siteLogo from '../../Imgs/zeroz/site-logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDolly, faLock, faAngleUp, faSortAmountAsc } from '@fortawesome/free-solid-svg-icons';
 export default function Checkout() {
@@ -59,7 +59,7 @@ export default function Checkout() {
                         <form id='checkoutForm' className='w-[55%]'>
                             <h3 className='border-b w-fit border-[#ddd] py-[2%] text-2xl font-bold'>Customer information</h3>
                             <div className='mt-[3%]'>
-                                <input required type='text' placeholder='Username or Email Address *' className='border p-[1.5%] rounded text-lg text-black w-full border-[#ddd]'/>
+                                <input required type='text' placeholder='Username or Email Address *' className='border border-[#ddd] p-[1.5%] rounded text-lg text-black w-full '/>
                             </div>
                             <h3 className='border-b border-[#ddd] py-[2%] text-2xl font-bold'>Billing details</h3>
                             <div className='mt-[3%]'>
@@ -99,7 +99,7 @@ export default function Checkout() {
                                 <a href='/' className='flex justify-center items-center gap-x-[2%]'>
                                     <button className=' bg-[#6e7051] tracking-widest font-semibold text-[1rem] mt-[2%] text-white p-3 w-[100%] duration-[0.8s] hover:bg-[#262b2c]'>
                                     <FontAwesomeIcon className='text-sm' icon={faLock} />
-                                    <p>PLACE ORDER ${discount ? ((1-(discount / 100)) * data.reduce((acc,item) => acc + +item.price.new.toString().replace('$','') ,0 )).toFixed(2) : data.reduce((acc,item) => acc + +item.price.new.toString().replace('$','') ,0).toFixed(2)}</p>
+                                    <p>PLACE ORDER ${discount ? ((1-(discount / 100)) * data.reduce((acc,item) => acc + +item.price.new.toString().replace('$','') * item.shoesNumber,0 )).toFixed(2) : data.reduce((acc,item) => acc + +item.price.new.toString().replace('$','') * item.shoesNumber,0).toFixed(2)}</p>
                                     </button>
                                 </a>
                             </div>
@@ -112,7 +112,7 @@ export default function Checkout() {
                                         <h6 className='whitespace-nowrap'>Show Order Summary</h6>
                                         <FontAwesomeIcon id='dropdownArrow' className='duration-[0.4s] mt-1' icon={faAngleUp} />
                                     </div>
-                                    <p className='yourOrderValue w-[25%] py-[3%] font-bold text-center min-w-fit'>${discount ? ((1-(discount / 100)) * data.reduce((acc,item) => acc + +item.price.new.toString().replace('$','') ,0 )).toFixed(2) : data.reduce((acc,item) => acc + +item.price.new.toString().replace('$','') ,0).toFixed(2)}</p>
+                                    <p className='yourOrderValue w-[25%] py-[3%] font-bold text-center min-w-fit'>${discount ? ((1-(discount / 100)) * data.reduce((acc,item) => acc + +item.price.new.toString().replace('$','') * item.shoesNumber,0 )).toFixed(2) : data.reduce((acc,item) => acc + +item.price.new.toString().replace('$','') * item.shoesNumber,0).toFixed(2)}</p>
                                 </div>
                                 <div id='yourOrderDiv'>
                                     <div id='yourOrderTitle' className='flex ps-[2%] py-[3%] justify-between items-center border-b'>
@@ -136,7 +136,7 @@ export default function Checkout() {
                                     </div>
                                     <div className='flex ps-[4%] py-[3%] justify-between items-center border-b'>
                                         <h6 className=' w-[75%] font-bold min-w-fit'>Total</h6>
-                                        <p className='yourOrderValue w-[25%] font-bold text-center min-w-fit'>${discount ? ((1-(discount / 100)) * data.reduce((acc,item) => acc + +item.price.new.toString().replace('$','') ,0 )).toFixed(2) : data.reduce((acc,item) => acc + +item.price.new.toString().replace('$','') ,0).toFixed(2)}</p>
+                                        <p className='yourOrderValue w-[25%] font-bold text-center min-w-fit'>${discount ? ((1-(discount / 100)) * data.reduce((acc,item) => acc + +item.price.new.toString().replace('$','') * item.shoesNumber,0 )).toFixed(2) : data.reduce((acc,item) => acc + +item.price.new.toString().replace('$','') * item.shoesNumber,0).toFixed(2)}</p>
                                     </div>
                                 </div>
                             </div>

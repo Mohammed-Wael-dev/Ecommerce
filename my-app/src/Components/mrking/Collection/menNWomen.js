@@ -40,8 +40,8 @@ export default function MenPage() {
           ...item,
           price: {
             ...item.price,
-            new: parseFloat(item.price.new.replace("$", "")),
-            old: parseFloat(item.price.old.replace("$", "")),
+            new: item.price.new.toString(),
+            old: item.price.old.toString(),
           },
         }));
 
@@ -77,7 +77,6 @@ export default function MenPage() {
       }else{
           document.querySelector('body').style.overflow = 'hidden';
       }
-      // console.log(e.target.value)
       if(e.target.textContent != ''){
           setHighQuickVal(male.filter(item => item.name == e.target.textContent )|| "");
           
