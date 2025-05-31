@@ -4,22 +4,22 @@ import { faX } from '@fortawesome/free-solid-svg-icons'
 import { faStar, faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { faPinterestP, faXTwitter , faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import HomeContentStyle from './HomeContentStyle.css'
-import asSeen1 from '../../Imgs/zeroz/asSeen1.png'
-import asSeen2 from '../../Imgs/zeroz/asSeen2.png'
-import asSeen3 from '../../Imgs/zeroz/asSeen3.png'
-import asSeen4 from '../../Imgs/zeroz/asSeen4.png'
-import asSeen5 from '../../Imgs/zeroz/asSeen5.png'
-import aboutUsImg from '../../Imgs/zeroz/aboutUsImg.jpg'
-import shoes from '../../Imgs/zeroz/shoes.png'
+import asSeen1 from '../../Imgs/m-wael/asSeen1.png'
+import asSeen2 from '../../Imgs/m-wael/asSeen2.png'
+import asSeen3 from '../../Imgs/m-wael/asSeen3.png'
+import asSeen4 from '../../Imgs/m-wael/asSeen4.png'
+import asSeen5 from '../../Imgs/m-wael/asSeen5.png'
+import aboutUsImg from '../../Imgs/m-wael/aboutUsImg.jpg'
+import shoes from '../../Imgs/m-wael/shoes.png'
 import Rating from '@mui/material/Rating';
 import Avatar from '@mui/material/Avatar';
-import RecycledImg from '../../Imgs/zeroz/RecycledImg.png'
-import VeganImg from '../../Imgs/zeroz/VeganImg.png'
-import handMadeImg from '../../Imgs/zeroz/handMadeImg.png'
-import recycledBigImg from '../../Imgs/zeroz/recycledBigImg.jpg'
-import JuliaImg from "../../Imgs/zeroz/JuliaKeys.jpg"
-import LuisImg from "../../Imgs/zeroz/LuisAdrian.jpg"
-import MariaImg from "../../Imgs/zeroz/MariaAnna.jpg"
+import RecycledImg from '../../Imgs/m-wael/RecycledImg.png'
+import VeganImg from '../../Imgs/m-wael/VeganImg.png'
+import handMadeImg from '../../Imgs/m-wael/handMadeImg.png'
+import recycledBigImg from '../../Imgs/m-wael/recycledBigImg.jpg'
+import JuliaImg from "../../Imgs/m-wael/JuliaKeys.jpg"
+import LuisImg from "../../Imgs/m-wael/LuisAdrian.jpg"
+import MariaImg from "../../Imgs/m-wael/MariaAnna.jpg"
 export default function HomeContent() {
     const [female, setFemale] = useState([]);
     const [male, setMale] = useState([]);

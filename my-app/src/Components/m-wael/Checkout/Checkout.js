@@ -2,7 +2,7 @@ import CheckoutStyle from './CheckoutStyle.css'
 import { useState, useEffect } from 'react';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-import siteLogo from '../../Imgs/zeroz/site-logo.png'
+import siteLogo from '../../Imgs/m-wael/site-logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDolly, faLock, faAngleUp, faSortAmountAsc } from '@fortawesome/free-solid-svg-icons';
 export default function Checkout() {
