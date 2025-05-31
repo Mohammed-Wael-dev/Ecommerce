@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 .homeFirstDiv{
-    background-image: url('../../Imgs/zeroz/homePage.jpg');
+    background-image: url('../../Imgs/m-wael/homePage.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -94,14 +94,14 @@
 }
 .menOrWomenRoute #menRoute{
     width: 100%;
-    background-image: url('../../Imgs/zeroz//menRoute.jpg');
+    background-image: url('../../Imgs/m-wael//menRoute.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .menOrWomenRoute #womenRoute{
     width: 100%;
-    background-image: url('../../Imgs/zeroz//womenRoute.jpg');
+    background-image: url('../../Imgs/m-wael//womenRoute.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,7 +1,7 @@
-import lookBook1 from '../../Imgs/zeroz/lookBook1.jpg'
-import lookBook2 from '../../Imgs/zeroz/lookBook2.jpg'
-import lookBook3 from '../../Imgs/zeroz/lookBook3.jpg'
-import lookBook4 from '../../Imgs/zeroz/lookBook4.jpg' 
+import lookBook1 from '../../Imgs/m-wael/lookBook1.jpg'
+import lookBook2 from '../../Imgs/m-wael/lookBook2.jpg'
+import lookBook3 from '../../Imgs/m-wael/lookBook3.jpg'
+import lookBook4 from '../../Imgs/m-wael/lookBook4.jpg' 
 import LookBookStyle from './LookBookStyle.css'
 
 export default function LookBook() {
